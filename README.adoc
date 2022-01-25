@@ -48,6 +48,7 @@ mirror:
 * Running oc-mirror
     - Once you are in the oc-mirror directory you will uyse the following command to gather the operators: 
 ----
+
      $ ./bin/oc-mirror --config imageset-config.yaml file://archive
  
      Note: This will set of the oc-miorror command to configure via the imageset-config that we configured above. The file://archive is the destination that oc-mirror sends the tar files and workspaces to. Dont worry about the archive directory being on the system, oc-mirror will create it for you. 
