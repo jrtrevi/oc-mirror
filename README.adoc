@@ -123,11 +123,11 @@ $ sudo trust anchor path/to/certificate.crt
 * Looking for specific operators, catalogs, or channels
 
 ----
-./bin/oc-mirror list operators --catalogs --version=4.9
+$ ./bin/oc-mirror list operators --catalogs --version=4.9
 
-./bin/oc-mirror list operators --catalog=catalog-name
+$ ./bin/oc-mirror list operators --catalog=catalog-name
 
-./bin/oc-mirror list operators --catalog=catalog-name --package=package-name 
+$ ./bin/oc-mirror list operators --catalog=catalog-name --package=package-name 
 
-./bin/oc-mirror list operators --catalog=catalog-name --package=package-name --channel=channel-name
+$ ./bin/oc-mirror list operators --catalog=catalog-name --package=package-name --channel=channel-name
 ----
