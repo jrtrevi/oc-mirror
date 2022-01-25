@@ -1,14 +1,15 @@
 # oc-mirror
 
 = Installing oc-mirror on a connected node 
+The following procedure was tested on RHEL 8.5 and Fedora 34
 
 == Prerequisites: 
 - Docker/Podman
 - Go  (sudo dnf install go)
 - Make (sudo dnf install make)
+- https://cloud.redhat.com/openshift/install/metal/user-provisioned[Valid Pull Secret]
 ----
-Note: You must have a config.json in your .docker/ directory in order to successfuly pull and push the mirror images (applicable for all nodes).
-It is important because oc-mirror uses docker containers to pull images from a known registry and then uses a separate set of containers to push to a local or remote repository of your choosing. 
+Note: You must have a config.json in your .docker/ directory in order to successfuly pull and push the mirror images (applicable for all nodes). It is important because oc-mirror uses docker containers to pull images from a known registry and then uses a separate set of containers to push to a local or remote repository of your choosing. 
 ----
 
 == Cloning the repository
