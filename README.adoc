@@ -117,7 +117,6 @@ The output will have a big blue "INFO" at the end to easily locate the path.
 ----
 $ openssl s_client --connect <yourreg> --showcerts
 $ sudo trust anchor path/to/certificate.crt
-    Note: if using rhel8
 ----
 
 * Looking for specific operators, catalogs, or channels
