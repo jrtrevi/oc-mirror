@@ -140,6 +140,7 @@ Note:
   the system will need the oc command line and cluster-admin access to deploy these configurations
 
 == Additional notes
+The oc-mirror is a repeatable process to push and pull in new operators. The user can re-run the oc-mirror by creating a new tar based off of the ImageSetConfiguration yaml. The bundle can then be re-run on the disconnected registry and the yaml files will need to be reapplied to grab the new images.
 
 * to push to a remote registry, all server certificates must be verified by a CA otherwise you must add the servers certificate to your store.
 ----
@@ -189,3 +190,5 @@ spec:
     - ocp-registry.ocp.cvn5000.navy.mil:5000/ocs4
     source: registry.redhat.io/ocs4
 ----
+
+2. Delete the errored pods in some cases to redeploy the operator 
